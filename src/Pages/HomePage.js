@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Me from "../Assets/mrandou.JPG" 
 import "../Style/HomePageStyle.css"
 import Carousel from "../Components/Carousel"
+import Text from "../Components/Text"
 import Container from '@material-ui/core/Container';
 
 export default class HomePage extends React.Component {
@@ -20,6 +21,9 @@ export default class HomePage extends React.Component {
 						</div>
 					</Grid>
 				</Grid>
+        <Container fixed>
+          <Text />
+        </Container>
         <Container fixed>
           <Carousel />
         </Container>

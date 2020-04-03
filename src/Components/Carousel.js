@@ -15,7 +15,7 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import CloseIcon from '@material-ui/icons/Close';
 import Grow from '@material-ui/core/Grow';
 import { carouselData } from '../Data/Data';
-import { carouselStyle } from '../Style/Style'
+import { carouselStyle } from '../Style/CarouselStyle'
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
