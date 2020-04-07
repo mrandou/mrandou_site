@@ -1,19 +1,59 @@
-.home {
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 15px;
-	background-color: rgba(87, 87, 87, 0.5);
-	border-bottom: solid 2px rgb(14, 14, 14, 0.5);
+div#back {
+  background: url(../Assets/office.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-.pic {
-	display: inline-block;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	object-fit: cover;
+div#mr {
+  width:400px;
+  height:400px;
+  margin: 0 auto;
+  position: absolute;
+  right: 13%;
+  top: 57%;
+  transform: skewX(-30deg);
 }
 
-.name {
-	margin-top: 40px;
+letter {
+  color: #0000679c;
+  font-size: 250px;
+  position: absolute;
+  z-index: 1;
+  /* -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+}
+
+letterR {
+  color: red;
+  font-size: 150px;
+  position: absolute;
+  margin: 94px 196px;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
 }

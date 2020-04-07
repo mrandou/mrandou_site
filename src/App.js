@@ -58,16 +58,16 @@ class App extends React.Component {
 		return (
 			<div>
 			<Router>
-				<ThemeProvider theme={this.state.darktheme ? dark_theme : light_theme}>
-					<Header enabledDarkTheme={this.enabledDarkTheme} darktheme={this.state.darktheme} />
-					<this.choiseBack/>
+				{/* <ThemeProvider theme={this.state.darktheme ? dark_theme : light_theme}> */}
+					{/* <Header enabledDarkTheme={this.enabledDarkTheme} darktheme={this.state.darktheme} /> */}
+					{/* <this.choiseBack/> */}
 					<Switch>
 						<Route path='/' exact component={HomePage} />
 						<Route path='/Readme' component={ReadmePage} />
 						<Route path='/Test' component={TestPage} />
 						<Route component={HomePage} />
 					</Switch>
-			 </ThemeProvider>
+			 {/* </ThemeProvider> */}
 			</Router>
 			</div>
 		);
