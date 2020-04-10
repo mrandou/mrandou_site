@@ -1,24 +1,26 @@
 import React from 'react';
-// import Me from "../Assets/mrandou.JPG" 
+import laptop from '../Assets/laptop.png'
 import "../Style/HomePageStyle.css"
-import Back from "../Assets/office.jpg"
+import Grid from '@material-ui/core/Grid';
 
 export default class HomePage extends React.Component {
 
-	firstPanel() {
-		return (
-			<div id="back">
-        <div id="mr">
-          <letter>M</letter>
-          <letterR>R</letterR>
-        </div>
-			</div>
-		);
-	}
-
 	render() {
 		return (
-			<this.firstPanel/>
+      <div id="panel">
+        <Grid container>
+          <Grid xs={7}>
+            <div id="script">
+              <h1>Maxime Randou</h1>
+              <h3>42 Student</h3>
+              <h3>Frontend developper</h3>
+            </div>
+          </Grid>
+          <Grid xs={5}>
+            <img src={laptop} alt="Laptop" id="picture"/>
+          </Grid>
+        </Grid>
+      </div>
     )
   }
 }
